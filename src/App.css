@@ -1,38 +1,79 @@
-.App {
+.CssComponent {
+  /* 新しく追加したHeader */
+  color: white;
+  background-color: #66cc99;
+  border-top: 1px solid #66cc99;
+  border-bottom: 1px solid #66cc99;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 3em; /* 高さと文字のサイズを調整 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  text-align: center; /* タイトルタグのテキストを中央に寄せる */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.postFormContainer {
+  float: right;
+}
+
+/* スレッドリストのスタイル */
+/* <li> 要素のスタイル */
+.newThreadList {
+  text-align: center;
+  /* リスト内のテキストを中央に寄せる */
+  width: 500px;
+  margin: auto;
+}
+
+.createdThreadtable {
+  margin-left: 30px; 
+}
+
+.createdThreadtable table, td, th{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.postTable  {
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: 380px; 
+}
+
+.CssComponent2 {
+  /* 「スレッドをたてる」を一番右側の右上に寄せる */
+  width: 200px;
+  height: 180px;
+  font-size: 0.8em;
+  position: fixed;
+  top: 0px;
+  right: 20px;
+}
+
+.submit {
+  font-size: 1.8em;
+}
+
+.OnclickButton {
+  font-size: 20px;
+  text-align: center;
+}
+
+.intitle label {
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intitle input {
+  width: calc(50% - 50px); /* 残りの幅を入力フィールドに割り当てます */
+  box-sizing: border-box; /* 幅がボーダーボックス内に収まるようにします */
 }

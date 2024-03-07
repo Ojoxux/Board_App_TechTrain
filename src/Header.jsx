@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <header className="CssComponent">
+    <header className="HeaderComp1">
       <h1>掲示板</h1>
       <br></br>
-      <header className="CssComponent2">
-        <div className="submit">
+      <header className="HeaderComp2">
+        <div className="submit"> 
+          {/* スレッド一覧画面に遷移するための処理 */}
           <Link to="/thread/new">スレッドを立てる</Link>
-          {/* 他のコンポーネントと共に表示されるコンテンツ */}
         </div>
       </header>
     </header>

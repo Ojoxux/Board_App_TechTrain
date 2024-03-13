@@ -67,15 +67,13 @@ export const ThreadCreateScreen = () => {
           />
         </div>
 
-        {/*submitにするとよい*/}
-        <button type="button" onClick={handleFormButton}>
-          スレッド作成
-        </button>
-
-        {/*これは書かないほうが良い　スタイルで書くべき*/}
-        <br></br>
-
-        <button type="button" onClick={() => nav("/")}>
+        <p>
+          <button type="submit" onClick={handleFormButton}>
+            スレッド作成
+          </button>
+        </p>
+        
+        <button type="submit" onClick={() => nav("/")}>
           Topに戻る
         </button>
       </form>

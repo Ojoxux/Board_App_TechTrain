@@ -24,17 +24,20 @@ h2 {
 /* <li> 要素のスタイル */
 .newThreadList {
   text-align: center;
+  
   /* リスト内のテキストを中央に寄せる */
   width: 500px;
   margin: auto;
 }
 
 .createdThreadtable {
-  margin-left: 30px; 
+  margin-left: 30px;
+  border-spacing: 0;
+  width: 100%;
 }
 
 .createdThreadtable table, td, th{
-  border: 1px solid black;
+  border: 1px solid grey;
   border-collapse: collapse;
   width: 50%;
 }
@@ -77,4 +80,10 @@ h2 {
 .intitle input {
   width: calc(50% - 50px); /* 残りの幅を入力フィールドに割り当てます */
   box-sizing: border-box; /* 幅がボーダーボックス内に収まるようにします */
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
 }

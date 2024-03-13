@@ -1,37 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import {getThreadList} from "./GetThreadList"
 
 export const ThreadList = () => {
   const [threads, setThreads] = useState([]); // スレッドのタイトルの配列
 
-  // スレッドリストをAPIから取得する非同期関数
-  async function getThreadList() {
-    //const url = "https://railway.bulletinboard.techtrain.dev/threads"; // APIエンドポイントのURL
-
-    // GETリクエストを送信
-    //
-    try {
-      const response = await fetch(
-        "https://railway.bulletinboard.techtrain.dev/threads",
-        { method: "GET" }
-      );
-      console.log("APIリクエスト成功"); // 成功時のログ
-
-      if (response.ok) {
-        // リクエストが完了してから結果を表示したいのでawaitを使う
-        const threads = await response.json(); // レスポンスデータをJSON形式に変換
-        setThreads(threads); // スレッドタイトルのステートを更新
-      } else {
-        console.error("APIリクエストが失敗しました"); // 失敗時のエラーログ
-      }
-    } catch (error) {
-      console.error("APIリクエスト中にエラーが発生しました", error); // エラーハンドリング
-    }
-  }
-
   // コンポーネントがマウントされた時にスレッドリストを取得
   useEffect(() => {
-    getThreadList();
+    async function fetchData() {
+      const threads = await getThreadList(); // 別ファイルのメソッドを呼ぶ
+      setThreads(threads); // スレッドタイトルのステートを更新
+    }
+    fetchData();
   }, []);
 
   return (

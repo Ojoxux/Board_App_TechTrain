@@ -28,7 +28,7 @@ const PostForm = ({ onCommentSubmit }) => {
   // コンポーネントのレンダリング
   return (
     <form onSubmit={handleSubmit}>
-      {/* テキスト入力フィールド */}
+      {/*input*/}
       <input
         id="newComment"
         value={comment}
@@ -38,9 +38,9 @@ const PostForm = ({ onCommentSubmit }) => {
         onChange={handleChange}
       />
       <br></br>
-      {/* 投稿ボタン */}
+      {/*Post*/}
       <Button variant="contained" color="primary" type="submit">投稿</Button>
-      {/* 戻るボタン */}
+      {/*Back*/}
       <Button variant="outlined" color="secondary" type="button" onClick={() => nav("/")}>戻る</Button>
     </form>
   );

@@ -1,5 +1,4 @@
-.CssComponent {
-  /* 新しく追加したHeader */
+.HeaderComp1 {
   color: white;
   background-color: #66cc99;
   border-top: 1px solid #66cc99;
@@ -17,6 +16,8 @@ h2 {
 
 .postFormContainer {
   float: right;
+  margin-right: 300px;
+  margin-bottom: 40px;
 }
 
 /* スレッドリストのスタイル */
@@ -38,17 +39,17 @@ h2 {
   width: 50%;
 }
 
-.postTable  {
+.postTable{
   margin: 0 auto;
   text-align: center;
   border: 1px solid black;
   border-collapse: collapse;
   width: 50%;
-  margin-left: 380px; 
+  margin-left: 380px;
 }
 
-.CssComponent2 {
-  /* 「スレッドをたてる」を一番右側の右上に寄せる */
+/*新規ボタン右寄せ*/
+.HeaderComp2 {
   width: 200px;
   height: 180px;
   font-size: 0.8em;

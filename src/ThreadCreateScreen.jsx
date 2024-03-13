@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const Threadcreationscreen = () => {
+export const ThreadCreateScreen = () => {
   // スレッドのタイトルを管理するstate
   const [title, setTitle] = useState("");
   // React Routerのページ遷移関数を取得
@@ -57,7 +57,7 @@ export const Threadcreationscreen = () => {
       <h2>新着スレッドの作成</h2>
       <form>
         <div className="intitle">
-          <label htmlFor="title">▼スレッドタイトルを入力してください</label>
+          <label htmlFor="title">スレッドタイトルを入力</label>
           <input
             id="title"
             type="text"
@@ -67,14 +67,14 @@ export const Threadcreationscreen = () => {
           />
         </div>
 
-        {/* フォーム送信ボタン */}
+        {/*submitにするとよい*/}
         <button type="button" onClick={handleFormButton}>
           スレッド作成
         </button>
 
+        {/*これは書かないほうが良い　スタイルで書くべき*/}
         <br></br>
 
-        {/* トップページへのリンク */}
         <button type="button" onClick={() => nav("/")}>
           Topに戻る
         </button>

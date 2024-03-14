@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client"; // ReactDOMのクライアントバー�
 
 import "./index.css"; // CSSファイルのインポート
 import "./App"; // Appコンポーネントのインポート
-import { ThreadList } from "./components/ThreadList/ThreadList"; // スレッドリストコンポーネントのインポート
-import { ThreadCreateScreen } from "./components/ThreadCreateScreen/ThreadCreateScreen"; // スレッド作成画面コンポーネントのインポート
-import { Post } from "./components/Post/Post"; // 投稿コンポーネントのインポート
+import { ThreadList } from "./ThreadList"; // スレッドリストコンポーネントのインポート
+import { ThreadCreateScreen } from "./ThreadCreateScreen"; // スレッド作成画面コンポーネントのインポート
+import { Post } from "./Post"; // 投稿コンポーネントのインポート
 import { Route, Routes, BrowserRouter } from "react-router-dom"; // React Routerの関連要素をインポート
-import { Header } from "./components/Header/Header"; // ヘッダーコンポーネントのインポート
+import { Header } from "./Header"; // ヘッダーコンポーネントのインポート
 
 const root = ReactDOM.createRoot(document.getElementById("root")); // Reactのルートを作成し、HTMLのroot要素に割り当てる
 root.render(

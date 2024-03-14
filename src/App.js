@@ -1,6 +1,6 @@
 import "./App.css";
-import { Header } from "./components/Header/Header";
-import { ThreadList } from "./components/ThreadList/ThreadList";
+import { Header } from "./Header";
+import { ThreadList } from "./ThreadList";
 
 function App() {
   return (

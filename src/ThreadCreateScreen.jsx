@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { handleFormButton } from "../../Util/FormSend";
+import { handleFormButton } from "./HandleFormButton";
 
 export const ThreadCreateScreen = () => {
   // スレッドのタイトルを管理するstate
@@ -36,7 +36,7 @@ export const ThreadCreateScreen = () => {
         </div>
 
         <p>
-          <button type="submit" onClick={handleFormButton}>
+          <button type="submit" onClick={handleForm}>
             スレッド作成
           </button>
         </p>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { handleFormButton } from "./HandleFormButton";
+import { handleFormButton } from "../api/HandleFormButton";
 
 export const ThreadCreateScreen = () => {
   // スレッドのタイトルを管理するstate

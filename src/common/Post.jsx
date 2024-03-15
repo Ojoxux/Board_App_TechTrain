@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import PostForm from "./PostForm"; // PostForm コンポーネントのインポート
 import PostList from "./PostList"; // PostList コンポーネントのインポート
-import { handleCommentSubmit } from "./HandleCommentSubmit";
+import { handleCommentSubmit } from "../api/HandleCommentSubmit";
 export const Post = () => {
   const location = useLocation();
   const { title } = location.state || { id: "", title: "" };

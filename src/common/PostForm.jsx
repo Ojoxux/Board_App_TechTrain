@@ -37,11 +37,13 @@ const PostForm = ({ onCommentSubmit }) => {
         placeholder="投稿しよう！！"
         onChange={handleChange}
       />
+
       <br></br>
+
       {/*Post*/}
       <Button variant="contained" color="primary" type="submit">投稿</Button>
       {/*Back*/}
-      <Button variant="outlined" color="secondary" type="button" onClick={() => nav("/")}>戻る</Button>
+      <Button variant="outlined" color="secondary" type="submit" onClick={() => nav("/")}>戻る</Button>
     </form>
   );
 };

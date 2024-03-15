@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { getThreadList } from "./GetThreadList";
+import { getThreadList } from "../api/GetThreadList";
+import "./App.css";
 
 export const ThreadList = () => {
   const [threads, setThreads] = useState([]); // スレッドのタイトルの配列
